@@ -1,6 +1,58 @@
-.headerContainer{
+body {
+  background-color: #393d3f!important;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Nav Bar */
+.navTitle {
+  font-size: 12px;
+}
+
+.navHeader{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navLinks {
+  position: absolute;
+  right: 0;
+  font-size: 12px;
+  margin-right: 20px;
+}
+
+/* About Page */
+.aboutImg {
+  display: inline;
   margin: 0 auto;
-  height: 25%;
-  background-color: gray;
-  border-radius: 5px;
+  height: 100%;
+  width: auto;
+}
+
+.imgWrap {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.aboutTitle{
+  font-family: 'Montserrat', sans-serif;
+  color: White;
+}
+
+.aboutMeContainer {
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 1000px) {
+  
+  .navLinks {
+    position: inherit;
+    text-align: right;
+  }
+
+  .navTitle {
+    display: block;
+  }
+
 }

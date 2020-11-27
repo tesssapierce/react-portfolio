@@ -1,30 +1,22 @@
 import React from "react"
+import Navbar from "react-bootstrap/Navbar"
 import Nav from "react-bootstrap/Nav"
 
 const Header = () => {
   return (
-    <header className="headerContainer container">
-      <div className="row">
-        <div className="col-10">
-          <h2 className="headerName">Teresa Pierce</h2>
-          <h3 className="headerTitle">Full Stack Developer | Digital Expert</h3>
-        </div>
-      </div>
+    <header className="headerContainer navHeader">
 
-      <Nav variant="tabs" defaultActiveKey="/home">
-        <Nav.Item>
-          <Nav.Link href="/home">Home</Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link href="/portfolio" eventKey="link-1">Portfolio</Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link href="/resume" eventKey="link-2">Resume</Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link href="/contact" eventKey="link-3">Contact</Nav.Link>
-        </Nav.Item>
-      </Nav>
+      <Navbar bg="light" expand="lg">
+        <Navbar.Brand href="#home">Teresa Pierce <span className="navTitle">Full Stack Developer & Digital Expert</span></Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="navLinks">
+            <Nav.Link href="#home">about</Nav.Link>
+            <Nav.Link href="#link">portfolio</Nav.Link>
+            <Nav.Link href="#link">contact</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
     </header>
   )
 }
